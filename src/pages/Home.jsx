@@ -8,7 +8,9 @@ import CurvedLoop from '../components/CurvedLoop';
 import Magnet from '../components/Magnet';
 import TiltedCard from '../components/TiltedCard';
 import Footer from '../components/Footer';
-
+import aboutpic from '../assets/pic3.png';
+import product1 from '../assets/Venticure_plus.png';
+import product2 from '../assets/Babycure.jpg';
 
 const Home = () => {
   const handleAnimationComplete = () => {
@@ -62,7 +64,7 @@ const Home = () => {
     </div>
     <div className='flex items-center justify-center p-8 mt-8'>
       <Magnet padding={50} disabled={false} magnetStrength={5}>
-      <img className="rounded-xl shadow-md w-[60vw] lg:w-[30vw]" src="src/assets/pic3.png" alt="" />
+      <img className="rounded-xl shadow-md w-[60vw] lg:w-[30vw]" src={aboutpic} alt="" />
       </Magnet>
     </div>
  </div>
@@ -75,7 +77,7 @@ const Home = () => {
   <div className='flex flex-col items-center justify-center lg:justify-between gap-32 my-32'>
     <div className='flex flex-row flex-wrap lg:flex-nowrap items-start justify-center gap-16'>
     <TiltedCard
-  imageSrc="src/assets/Venticure_plus.png"
+  imageSrc={product1}
   captionText="Venticure Plus - Advanced Ventilator"
   containerHeight="400px"
   containerWidth="300px"
@@ -97,7 +99,7 @@ const Home = () => {
 </div>
 <div className='flex flex-row-reverse flex-wrap lg:flex-nowrap items-start justify-center gap-16'>
     <TiltedCard
-  imageSrc="src/assets/Babycure.jpg"
+  imageSrc={product2}
   captionText="Babycure - Advanced Neonatal Ventilator"
   containerHeight="400px"
   containerWidth="300px"

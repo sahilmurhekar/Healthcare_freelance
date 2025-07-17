@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
+// Import images
+import pic1 from '../assets/pic1.png';
+import pic2 from '../assets/pic2.png';
+import pic3 from '../assets/pic3.png';
+
 const Carousel = () => {
-  // Array of your local image paths
-  const images = [
-    'src/assets/pic1.png', // Replace with your actual image paths
-    'src/assets/pic2.png',
-    'src/assets/pic3.png'
-  ];
+  const images = [pic1, pic2, pic3];
 
   const [currentSlide, setCurrentSlide] = useState(0);
 

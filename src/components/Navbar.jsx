@@ -1,5 +1,5 @@
 import React from 'react'
-
+import logo from '../assets/logo.png';
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 z-50 rounded-xl fixed top-5 w-[95%] px-8">
@@ -17,7 +17,7 @@ const Navbar = () => {
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">
-      <img className='h-6' src="src/assets/logo.png" alt="" />
+      <img className='h-6' src={logo} alt="" />
     </a>
   </div>
   <div className="navbar-center hidden lg:flex">
